@@ -10,6 +10,12 @@ Note: all of the following links are external links and open in a new tab.
 2. Create a new project for this course.  In the dashboard, click on current project name (for me, that's ProjectForClass), and within that view, you'll see an option to create a new project.
 
 3. Install terraform (on your computer) [link](https://developer.hashicorp.com/terraform/install).  
+   - For Linux (Ubuntu)
+```shell
+wget -O- https://apt.releases.hashicorp.com/gpg | sudo gpg --dearmor -o /usr/share/keyrings/hashicorp-archive-keyring.gpg
+echo "deb [signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] https://apt.releases.hashicorp.com $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/hashicorp.list
+sudo apt update && sudo apt install terraform
+```
 
 4. Install gcloud CLI (on your computer) [link](https://cloud.google.com/sdk/docs/install).  
    - Before you install the gcloud CLI, make sure that your operating system meets the following requirements
@@ -64,7 +70,6 @@ sudo apt-get install kubectl
 ```shell
 gcloud init
 ```
-
 
 5. Clone or fork the course github repo  [link](https://github.com/eric-keller/npp-cloud)
 
