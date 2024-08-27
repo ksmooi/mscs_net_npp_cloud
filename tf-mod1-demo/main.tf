@@ -11,8 +11,8 @@ terraform {
 resource "google_compute_instance" "mod1-tf-vm1" {
   name = "mod1-tf-vm1"
   machine_type = "e2-micro"
-//  zone = "us-central1-a"  
-  zone = "us-west1-c"
+  zone = "us-central1-a"  
+//  zone = "us-west1-c"
   network_interface {
     access_config {
       network_tier = "STANDARD"
