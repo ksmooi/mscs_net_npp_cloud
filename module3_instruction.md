@@ -4,6 +4,8 @@ The lab assignment focuses on building and configuring a network infrastructure 
 
 You will create two VPCs, each with a virtual machine (VM) inside a subnet using the private address space `172.16.x.x`. The goal is to configure these VPCs and VMs such that traffic can be routed from one VM through the other and out to the internet, even though neither VM has a public IP address.
 
+<img src="image/wan_system_diagram.jpg" width="700" />
+
 ### **Steps Involved**
 
 #### 1. **Set Up the Infrastructure Using Terraform**
